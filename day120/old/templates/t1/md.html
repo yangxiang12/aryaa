@@ -1,0 +1,19 @@
+<table border="1">
+    <thead>
+        <tr>
+            {% for row in t_list %}
+                <td>{{ row }}</td>
+            {% endfor %}
+        </tr>
+    </thead>
+    <tbody>
+        {% for item in xx %}
+
+            <tr>
+                {% for val in item %}
+                    <td>{{ val }}</td>
+                {% endfor %}
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
